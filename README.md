@@ -1,1 +1,6 @@
-# airbnb_ethics
+# Airbnb Data Ethical Issues and Quality Predictions
+
+## By Yiwen Wang & Catharine Wu
+
+# Abstract
+Airbnb is a popular platform when people are looking for short-term housings for travel or business. It is surprising that Airbnb publicly releases an enormous amount of data on its listings including detailed information on the location of the listings and the hosts, which raises privacy concerns. In this project, we focus on the Airbnb Boston dataset, discuss its ethical issues and predict listing qualities. For such an identifiable dataset, our first instinct was anonymization. But we were concerned that such procedures would affect the efficiency and accuracy of our analysis. So after data cleaning and model selection, we fit a Random Forest model to both the 3-anonymous and the original cleaned dataset, and compare their performance. The result was quite interesting. The Random Forest model took exact locations, such as Longitude as an important feature, but discarded the rather general location info, such as Neighborhood. And the model actually performed much better on the anonymized data. Thus we conclude that, anonymization, as shown in our example, can not only help protect privacy, but also remove noise in the datset, relieve the overfitting problem and help the model achieve a better performance.
